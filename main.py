@@ -51,4 +51,7 @@ class BankApp:
 
 window = tk.Tk()
 bank_app = BankApp(window)
+window.configure(bg="#3697f5")
+window.geometry("400x400+200+200")
+
 window.mainloop()
