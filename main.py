@@ -6,13 +6,13 @@ class BankApp:
         self.window = window
         self.window.title("Bank App")
 
-        self.selection_label = tk.Label(window, text="Select an account type:")
+        self.selection_label = tk.Label(window, text="Select an account type:",font=("Times Roman" ,10,"bold"))
         self.selection_label.pack()
 
-        self.saving_button = tk.Button(window, text="Saving Account", command=self.select_account_saving)
+        self.saving_button = tk.Button(window, text="Saving Account", font=("Times Roman" ,10,"bold"), command=self.select_account_saving)
         self.saving_button.pack()
 
-        self.current_button = tk.Button(window, text="Current Account", command=self.select_account_current)
+        self.current_button = tk.Button(window, text="Current Account", font=("Times Roman" ,10,"bold"),command=self.select_account_current)
         self.current_button.pack()
 
     def select_account_saving(self):
@@ -43,7 +43,7 @@ class BankApp:
     def check_balance(self):
         print("Checking account balance")
 
-    def deposit_money(self):
+    def deposit_money(self,):
         print("Depositing money")
 
     def withdraw_money(self):
@@ -51,7 +51,7 @@ class BankApp:
 
 window = tk.Tk()
 bank_app = BankApp(window)
-window.configure(bg="#3697f5")
-window.geometry("400x400+200+200")
+window.configure(bg="#4937e4")
+window.geometry("400x400+400+400")
 
 window.mainloop()
